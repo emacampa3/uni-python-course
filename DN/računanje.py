@@ -157,7 +157,6 @@ while True:
   # mešano
   if izbira_operacije == "?":
     operator = random.choice(["+", "-", "*", "/"])
-
     
     if operator == "+":
       z = x + y

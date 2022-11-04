@@ -68,20 +68,70 @@ while vsota < stevilo:
 print(f"da dosežemo vsaj vsoto {stevilo}, moramo sešteti vsaj {zacetna_vrednost} naravnih števil")
 
 
-# kvadrat iz zvezdic: NE DELA PRAV!
-dolzina_stranice = int(input("dolžina stranice: "))
+# izpiši števila
+for i in range(1,11,2): # s korakom 2
+  print(i)
+
+# backwards
+for i in range(10, 0, -1):
+  print(i)
+
+# ne izpiše 13 in 17
+for i in range(1, 35):
+  if i == 13 or i == 17:
+    continue
+  else:
+    print(i)
+
+# boljša praksa
+for i in range(1, 35):
+  if i != 13 or i != 17:
+    print(i)
+
+
+# izračun fakultete
+stevilo = int(input("vnesi celo število: "))
+fakulteta = 1
+
+for i in range(2, stevilo + 1):
+  fakulteta *= i
+print(f"fakulteta števila {stevilo} = {fakulteta}")
+
+
+# smrekica, kjer je vsakič 1 zvezdica več
+for i in range(1,21):
+  print("*"*i)
+
+# centrirana smrekica
+velikost = int(input("velikost smreke: "))
+if velikost % 2 == 0:
+  velikost += 1
+
+for i in range(1, velikost + 1, 2):
+  presledki = int(((velikost-1)/2)-((i-1)/2))
+  print(f'{" "*presledki} {"*"*i}')
+
+
+# kvadrat
+velikost = int(input("velikost kvadrata: "))
+
+for i in range(1, velikost + 1):
+  print("* "*velikost)
+
+
+# kvadrat, kjer imamo 2 for zanki
+velikost = int(input("velikost kvadrata: "))
 sirina_roba = 0
 
 while sirina_roba < 1:
-  sirina_roba = int(input("širina roba: ")) # vprašaj za širino, dokler ne izpolnjuje pogoja 
+  sirina_roba = int(input("širina roba: "))
 
-for i in range(dolzina_stranice):
-  for j in range(dolzina_stranice):
-    if i < sirina_roba or i > (dolzina_stranice - sirina_roba - 1) or j < sirina_roba or j > (dolzina_stranice - sirina_roba - 1):
+for vrstica in range(1, velikost + 1): # i = vrstica
+  for stolpec in range(1, velikost + 1): # j = stolpec
+    if vrstica <= sirina_roba or vrstica > (velikost - sirina_roba) or stolpec <= sirina_roba or stolpec > (velikost - sirina_roba):
       print("* ", end="")
-    else: #če ni rob, je prazno
-      print(" ", end="")
-  print() #skok v novo vrstico
+    else:
+      print("  ", end="")
+  print("")
 
 
-# diamant iz zvezdic: REŠI!
