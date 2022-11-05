@@ -1,13 +1,13 @@
 import random
 
-nakljucnoŠtevilo = random.randint(0, 10)
+nakljucnoStevilo = random.randint(0, 10)
 x = 0 # števec
 while True:
   ugibanje = int(input("ugibaj število: "))
   x += 1
-  if ugibanje < nakljucnoŠtevilo:
+  if ugibanje < nakljucnoStevilo:
     print("Ne, premalo si rekel")
-  elif ugibanje > nakljucnoŠtevilo:
+  elif ugibanje > nakljucnoStevilo:
     print("Ne, prevec si rekel")
   else:
     break

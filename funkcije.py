@@ -148,3 +148,6 @@ h = int(input("Vnesi hipotenuzo: "))
 k = int(input("Vnesi kateto: "))
 
 print("Druga kateta je: ", ptrikotnik(kateta1=k, hipotenuza=h))
+
+
+
