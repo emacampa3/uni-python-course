@@ -1,4 +1,3 @@
-
 import math
 # kvadrat števila
 def kvadrat(stevilo):
@@ -16,13 +15,12 @@ def potenca(x, p=2):
 print(potenca(2,3)) # potenca je podana 2**3
 print(potenca(2)) # 2**2
 
-
 # koren
 def koren(stevilo):
   if stevilo > 0:
     return math.sqrt(stevilo)
   else:
-    print("pod korenom mora biti pozitivno število")
+    return "pod korenom mora biti pozitivno število"
 
 koreni = koren(25)
 print(koreni)
@@ -52,5 +50,3 @@ print(stevilo(1/2)) # True
 
 
 # koda za diamant vaje
-
-
