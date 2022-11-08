@@ -11,6 +11,7 @@ def razilka(stevilo1, stevilo2):
 rezultat = razilka(100, 20) # calling the function
 print(rezultat)
 
+
 # funkcija, ki izračuna maksimum in izpiše manjšega
 def maksimu(st1, st2):
   if st1<st2:
@@ -18,11 +19,11 @@ def maksimu(st1, st2):
   else:
     return st2
 
-
 z =  float(input("1,število: "))
 y = float(input("2, število: "))
 maks = maksimu(z,y)
 print(maks)
+
 
 # funkcija, ki izračuna drugi koren števila
 def koren(x, k=2):
