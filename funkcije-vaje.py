@@ -50,3 +50,6 @@ print(stevilo(1/2)) # True
 
 
 # koda za diamant vaje
+
+
+
