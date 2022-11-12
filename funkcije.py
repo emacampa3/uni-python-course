@@ -104,7 +104,7 @@ lahko parametre tudi poimenujemo, pri čemer nam ni treba
 posredovati vseh (privzete vrednosti)
 
 Kaj je ARGUMENT in kaj PARAMETER?
-Parameter je posrdovana oz. sprejeta stvar V FUNKCIJI
+Parameter je posredovana oz. sprejeta stvar V FUNKCIJI
 argument je to, kar posredujem noter
 
 (ista stvar z drugega zornega kota)

@@ -1,4 +1,5 @@
 import math
+
 # kvadrat števila
 def kvadrat(stevilo):
   rezultat = stevilo**2

@@ -49,7 +49,6 @@ print(vsota)
 
 # vsota kompliciranih členov z while zanko
 vsota = 0
-
 i = 1  # i se začne pri 0
 while i <= n:  # zadnji izračun bo pri i = n
   vsota = vsota + (-1)**(i+1) * realno_stevilo**i / i
