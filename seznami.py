@@ -37,3 +37,7 @@ tuple = (1, 2, 3, [4, 5]) # spreminjanje celega seznama znotraj tupla se ne da s
 # SET
 s = {2, 3, 4, 4, 5} # notri so lahko le unikatni elementi, podvojeni se zbrišejo
 
+
+
+
+

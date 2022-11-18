@@ -16,4 +16,7 @@ while True:
   vtipkana_crka = input("vnesi VELIKO crko: ")
   ugibanja = ugibanja + vtipkana_crka
 
-print("woohoo, uganu si")
+print("woohoo, uganil si")
+
+
+print("------\n|    |\n|    O\n|  /-+-/\n|    |\n|    |\n|   | |\n|   | |\n|\n----------\n")
