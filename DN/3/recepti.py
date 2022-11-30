@@ -21,22 +21,29 @@ while True:
   if izbira.upper() == "N":
     print(f"naključno izbran recept: {seznam[nakljucni_recept]['Recept']}")
     break
+
   elif izbira.upper() == "S":
-    for sestavina in glavne_sestavine:
-      print(sestavina)
-      gl_sestavina = input(f"ali imaš doma: {sestavina}? DA/NE: ")
-      if gl_sestavina.upper() == "DA":
-        print("super")
-        # do_sestavina = input(f"ali imaš doma: {dodatne_sestavine[nakljucna_dodatna_sestavina]}? DA/NE: ")
-        # if do_sestavina.upper() == "DA":
-        #   print(f"predlagam: {seznam[nakljucni_recept]['Recept']}")
-        # elif do_sestavina.upper() == "NE":
-        #   continue
-        # else:
-        #   print("neveljaven vnos")
-        #   continue
+    for gl_sestavina in glavne_sestavine:
+      print(gl_sestavina)
+      gl_sestavina_input = input(f"ali imaš doma: {gl_sestavina}? DA/NE: ")
+      if gl_sestavina_input.upper() == "DA":
+
+        index_gl_sestavine = glavne_sestavine.index(gl_sestavina) # index glavne sestavine v seznamu glavne_sestavine
+        for sestavina in seznam:
+          mesto_gl_sestavine_in_list = ''.join(map(str, sestavina['Glavne']))
+
+          if index_gl_sestavine == int(mesto_gl_sestavine_in_list): # če se index glavne sestavine v seznamu Glavne_sestavine ujema z indeksom v seznamu
+            index_pomozne_sestavine_in_list = ''.join(map(str, sestavina['Pomozne']))
+            index_dodatna_sestavina = int(index_pomozne_sestavine_in_list)
+            po_sestavina_input = input(f"ali imaš doma: {dodatne_sestavine[index_dodatna_sestavina]}? DA/NE: ")
+
+            if po_sestavina_input.upper() == "DA":
+              print(f"predlagam: {sestavina['Recept']}")
+              quit()
+            else: 
+              continue
         break
-      elif gl_sestavina.upper() == "NE":
+      elif gl_sestavina_input.upper() == "NE":
         continue
       else: 
         print("neveljaven vnos")
