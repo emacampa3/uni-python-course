@@ -1,5 +1,10 @@
 import random
 
+# stevilo = int(input("število študentov v predavalnici: "))
+# randomSt = random.randrange(1, stevilo+1)
+# print(randomSt)
+
+
 seznam_imen = []
 
 while True:
@@ -19,3 +24,5 @@ while True:
   elif vnos.upper() == "Q":
     print("adijo")
     quit()
+    
+# komentarji: alternativa
