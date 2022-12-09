@@ -63,15 +63,3 @@ def dnevi(datum1, datum2, formatDatuma="%d.%m.%Y"):
   print(razlika.days) # dobimo dneve
 
 dnevi("11.04.2000", "29.11.2022") # ne dela!
-
-
-#  program, ki uporabnico (nosecnico) vpraša po datumu zacetka zadnje menstruacije in vrne predviden datum poroda(prišteje 40 tednov)
-dMenstruacija = input("vnesi datum zadnje menstruacije v formatu dan.mesec.leto: ")
-dtMen = datetime.datetime.strptime(dMenstruacija, "%d.%m.%Y")  # pretvori v objekt tipa datetime
-
-# timedelta ima kot argument lahko teden
-dtPorod = dtMen + datetime.timedelta(weeks = 40)
-dPorod = dtPorod.strftime("%d.%m.%Y")
-
-print(f"predviden datum poroda je {dPorod}")
-
