@@ -1,0 +1,1 @@
+največje število: 99 najmanjše število: 0

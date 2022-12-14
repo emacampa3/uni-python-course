@@ -1,0 +1,2 @@
+To je prva datoteka,
+ki smo jo napisali s Pythonom
