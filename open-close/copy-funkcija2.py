@@ -30,7 +30,7 @@ def kopirajDef(imeDatoteke):
           defFun = defFun.split("(", maxsplit=1) # ločimo pri ločilu oklepaj: maxsplit pomeni da bo vse ostalo zajel kot en argument
           ime = defFun[0]  # izberemo samo prvi element: to je ime funkcije
           
-          # arguemnti
+          # argumenti
           arg = defFun[1] 
           arg = arg.split("):")[0]
 
