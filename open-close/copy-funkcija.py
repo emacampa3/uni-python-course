@@ -6,7 +6,7 @@ def kopirajDef(imeDatoteke):
     raise Exception("vhodna datoteka ni .py file")
   if not os.path.exists(imeDatoteke): # preverimo da datoteka obstaja
     raise Exception("vhodna datoteka ne obstaja")
-    
+
   imeDatotekeIzhodna = imeDatoteke[:-3]+".txt" # vse razen zadnjih treh znakov
 
   # odpremo obe datoteki
