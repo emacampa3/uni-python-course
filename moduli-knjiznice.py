@@ -60,6 +60,6 @@ def dnevi(datum1, datum2, formatDatuma="%d.%m.%Y"):
   else: 
     razlika = datum2 - datum1
 
-  print(razlika.days) # dobimo dneve
+  return razlika.days # dobimo dneve
 
 dnevi("11.04.2000", "29.11.2022") # ne dela!

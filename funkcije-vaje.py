@@ -48,9 +48,3 @@ def stevilo(x):
 print(stevilo(10)) # True
 print(stevilo("bla")) # False
 print(stevilo(1/2)) # True
-
-
-# koda za diamant vaje
-
-
-
