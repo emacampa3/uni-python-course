@@ -142,7 +142,7 @@ def ptrikotnik(kateta1=0, kateta2=0, hipotenuza=0):
 k1 = int(input("Vnesi kateto 1: "))
 k2 = int(input("Vnesi kateto 2: "))
 
-print("Hipozenuza je: ", ptrikotnik(kateta1=k1, kateta2=k2))
+print("Hipotenuza je: ", ptrikotnik(kateta1=k1, kateta2=k2))
 
 
 h = int(input("Vnesi hipotenuzo: "))
