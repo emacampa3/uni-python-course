@@ -8,6 +8,7 @@ except:
 
 while True:
   izbira = input("kaj želite narediti? 1 - vnos tel., 2 - izpis tel., 3 - izbris tel., k - konec: izbira: ")
+  
   if izbira == "1":
     ime = input("vnesi ime: ")
     tel = input("vnesi tel: ")
