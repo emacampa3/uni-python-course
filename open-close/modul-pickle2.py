@@ -1,13 +1,18 @@
 import pickle
 
 try:
-  with open("imenik.pic", "rb") as f: # preberemo, če datoteka obstaja
+  with open("imenik-profesor.pic", "rb") as f: # preberemo, če datoteka obstaja
     imenik = pickle.load(f)
 except:
   imenik = {}
 
 while True:
-  izbira = input("kaj želite narediti? 1 - vnos tel., 2 - izpis tel., 3 - izbris tel., k - konec: izbira: ")
+  izbira = input("""kaj želite narediti? 
+  1 - vnos tel.
+  2 - izpis tel.
+  3 - izbris tel.
+  k - konec
+  izbira: """)
   
   if izbira == "1":
     ime = input("vnesi ime: ")
@@ -31,5 +36,5 @@ while True:
     print("neveljavna izbira")
 
 # shranimo, da daluje tudi po zaprtju
-with open("imenik.pic", "wb") as f:
+with open("imenik-profesor.pic", "wb") as f:
   pickle.dump(imenik, f)

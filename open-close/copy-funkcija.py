@@ -1,6 +1,7 @@
 import os
 
-# Napišite funkcijo, ki iz prek vhodnega parametra dobi pythonovo datoteko in prekopira iz te datoteke v novo datoteko(ki naj ima isto ime kot prva, le koncnico "txt") vse vrstice, ki se zacnejo z def
+# Napišite funkcijo, ki iz prek vhodnega parametra dobi pythonovo datoteko in prekopira iz te datoteke v novo datoteko (ki naj ima isto ime kot prva, le koncnico "txt") vse vrstice, ki se zacnejo z def
+
 def kopirajDef(imeDatoteke):
   if imeDatoteke[-3:] != ".py": # preverimo zadnje 3 znake, če je file pythonova datoteka
     raise Exception("vhodna datoteka ni .py file")

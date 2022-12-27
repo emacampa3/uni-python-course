@@ -1,7 +1,7 @@
 # input vpiše v novo datoteko
-ime = input ("Prosim, vnesi ime: ")
+ime = input("Prosim, vnesi ime: ")
 
-with open ('datoteka.txt', "w") as datoteka:
+with open('datoteka.txt', "w") as datoteka:
   datoteka.write(ime)
     
 

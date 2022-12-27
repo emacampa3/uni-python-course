@@ -44,4 +44,4 @@ def kopirajDef(imeDatoteke):
           # zapišemo v novo datoteko .txt
           fw.write(f"{ime} \t {tip} \t {arg} \t {razred}")
 
-kopirajDef("python/open-close/copy-funkcija.py") # caaling the function
+kopirajDef("python/open-close/copy-funkcija.py") # calling the function

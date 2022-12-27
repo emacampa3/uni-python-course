@@ -85,8 +85,3 @@ while True:
   else:
     print("napačna izbira")
     continue
-    
-
-    
-
-
