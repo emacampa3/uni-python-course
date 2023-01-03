@@ -135,3 +135,4 @@ def nizi(daljsi, krajsi):
 
 nizi("tralala", "la")
 
+
