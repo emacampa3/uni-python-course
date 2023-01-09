@@ -1,4 +1,4 @@
-class vozilo:
+class vozilo():
   def __init__(self, kolesa = 4, osebe = 4):
     self.nosilnost = 750 # privzeta vrednost 
     self.kolesa = kolesa
